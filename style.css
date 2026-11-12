@@ -1,0 +1,205 @@
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Urbanist", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  background-color: #8a9db5;
+}
+.phone {
+  width: 375px;
+  min-height: 800px;
+  border-radius: 25px;
+  background-color: #dce3ea;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 20px 30px;
+}
+header button {
+  border: none;
+  width: 44px;
+  height: 44px;
+  background-color: white;
+  border-radius: 50%;
+}
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.info h3 {
+  font-size: medium;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+.info p {
+  font-size: 14px;
+  color: #6b7c93;
+}
+main {
+  padding: 0 20px 20px;
+}
+.main-card {
+  background-color: white;
+  border-radius: 30px;
+  padding: 30px 10px 35px;
+}
+.date-time {
+  padding: 0 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.date-time h3 {
+  font-weight: 500;
+  font-size: 16px;
+}
+.date-time p {
+  font-size: 16px;
+}
+.temp-row {
+  padding: 0 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.temp-row h1 {
+  font-weight: 500;
+  font-size: 72px;
+  margin: 20px 0 10px;
+}
+.temp-row i {
+  font-size: 70px;
+}
+.stats {
+  display: flex;
+  gap: 10px;
+  margin-top: 25px;
+}
+.stat {
+  display: flex;
+  flex-direction: column;
+  margin-top: auto;
+  flex: 1;
+  background-color: #e6eef7;
+  border-radius: 20px;
+  padding: 15px 12px;
+  min-width: 0;
+  min-height: 100px;
+}
+.stat.active {
+  background-color: #c5e0fc;
+}
+.stat p {
+  font-size: 13px;
+}
+.stat p:last-child {
+  font-size: 15px;
+  color: #6b7c93;
+}
+.stat p:first-of-type {
+  color: #1a1a1a;
+  margin-top: auto;
+}
+.real-feel {
+  padding: 0 10px;
+  font-size: 15px;
+  color: #6b7c93;
+}
+.real-feel span {
+  color: #1a1a1a;
+  font-weight: 600;
+}
+.stat i {
+  color: #6b7c93;
+  font-size: 14px;
+  display: block;
+}
+.hourly-card {
+  background-color: white;
+  border-radius: 30px;
+  padding: 10px;
+  margin-top: 20px;
+}
+.hourly-card h3 {
+  margin-bottom: 20px;
+  padding: 0 10px;
+}
+.hours {
+  display: flex;
+  padding: 0 4px;
+}
+.hour {
+  flex: 1;
+  text-align: center;
+}
+.hour i {
+  font-size: 20px;
+}
+.hour p {
+  font-size: 11px;
+  color: #6b7c93;
+  white-space: nowrap;
+}
+.hour p:last-child {
+  font-weight: bold;
+  font-size: 18px;
+  color: #1a1a1a;
+}
+.hourly-card h3:last-of-type {
+  margin-top: 20px;
+  font-weight: 400;
+}
+.icon-circle {
+  height: 44px;
+  width: 44px;
+  border-radius: 50%;
+  background-color: #eef2f6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 8px;
+}
+.tomorrow {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background-color: #2f8cf0;
+  color: white;
+  border-radius: 20px;
+  padding: 18px 15px;
+  margin-top: 8px;
+}
+.tomorrow-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #2f8cf0;
+}
+.tomorrow-info {
+  flex: 1;
+}
+.tomorrow-info p:first-child {
+  font-size: 18px;
+}
+.tomorrow-info p:last-child {
+  font-size: 13px;
+  opacity: 0.8;
+}
+.tomorrow-temp {
+  font-size: 13px;
+  white-space: nowrap;
+  align-self: flex-start;
+}

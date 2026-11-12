@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>weather app</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css"
+      integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="phone">
+      <header>
+        <button><i class="fa-solid fa-chevron-left"></i></button>
+        <div class="info">
+          <h3>Monterey</h3>
+          <p>20 April, Thursday</p>
+        </div>
+        <button><i class="fa-solid fa-ellipsis"></i></button>
+      </header>
+      <main>
+        <section class="main-card">
+          <div class="date-time">
+            <h3 id="day">Thursday</h3>
+            <p id="time">02:42 pm</p>
+          </div>
+          <div class="temp-row">
+            <h1 id="temp">24°C</h1>
+            <i class="fa-solid fa-cloud-sun"></i>
+          </div>
+          <p class="real-feel">
+            Real feel <span id="real-feel-value">16°C</span>
+          </p>
+          <div class="stats"></div>
+        </section>
+        <section class="hourly-card">
+          <h3>Hourly Forecast</h3>
+          <div class="hours"></div>
+          <h3>Tomorrow</h3>
+          <div class="tomorrow">
+            <div class="tomorrow-icon">
+              <i class="fa-solid fa-cloud-showers-heavy"></i>
+            </div>
+            <div class="tomorrow-info">
+              <p>Tomorrow</p>
+              <p>Light Rain Showers</p>
+            </div>
+            <div class="tomorrow-temp">↑ 18° ↓ 10°</div>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
